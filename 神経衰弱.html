@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>神経衰弱</title>
+    <link rel="stylesheet" href="神経衰弱.css">
+</head>
+<body>
+
+<h1>神経衰弱</h1>
+<!--　タイマーとリセットボタンをまとめるエリア　-->
+<div id="info">
+    <!--　経過時間を表示するテキスト　-->
+    <span id="timer">時間：0 秒</span>
+    <!--　ゲームを最初からやり直すためのボタン　-->
+    <button id="reset">リセット</button>
+</div>
+<!--　ゲームクリア時に表示するメッセージ全体-->
+<div id="clearMessage">
+    <div class="clear-box">
+        ゲームクリア！<br><br>
+        クリア時間：<span id="clearTime"></span> 秒<br><br>
+        <button id="restart">もう一度遊ぶ</button>
+    </div>
+</div>
+
+<div id="game"></div>
+
+
+<script src="神経衰弱.js"></script>
+</body>
+</html>
