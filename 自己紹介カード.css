@@ -1,0 +1,56 @@
+/* ページ全体の背景と中央寄せ */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* プロフィールカード */
+.card {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*見出し・リスト*/
+h1 {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* アクションボタン */
+.action-btn {
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 14px;
+
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* メッセージ表示 */
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #333;
+}
