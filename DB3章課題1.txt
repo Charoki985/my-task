@@ -1,0 +1,23 @@
+postgres=# CREATE TABLE books (
+postgres(# id SERIAL PRIMARY KEY,
+postgres(# title TEXT NOT NULL,
+postgres(# author TEXT NOT NULL,
+postgres(# price INTEGER
+postgres(# );
+CREATE TABLE
+
+postgres=# CREATE TABLE rentals (
+postgres(# id SERIAL PRIMARY KEY,
+postgres(# book_id INTEGER REFERENCES books(id),
+postgres(# borrower TEXT NOT NULL,
+postgres(# rental_date DATE,
+postgres(# returned TEXT DEFAULT '未返却'
+postgres(# );
+CREATE TABLE
+
+               テーブル一覧
+ スキーマ |  名前   |  タイプ  |  所有者
+----------+---------+----------+----------
+ public   | books   | テーブル | postgres
+ public   | rentals | テーブル | postgres
+(2 行)
