@@ -1,0 +1,12 @@
+postgres=# SELECT books.title,
+postgres-# books.author,
+postgres-# rentals.borrower,
+postgres-# rentals.rental_date
+postgres-# FROM rentals
+postgres-# JOIN books
+postgres-# ON rentals.book_id = books.id
+postgres-# WHERE rentals.returned = '未返却';
+       title        |  author  | borrower | rental_date
+--------------------+----------+----------+-------------
+ プログラミング入門 | 佐藤太郎 | 山田次郎 | 2024-02-01
+(1 行)
