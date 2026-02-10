@@ -1,0 +1,10 @@
+postgres=# UPDATE rentals
+postgres-# SET returned = '返却済'
+postgres-# WHERE id = 1;
+UPDATE 1
+
+ id | book_id |  borrower  | rental_date | returned
+----+---------+------------+-------------+----------
+  2 |       2 | 佐々木三郎 | 2024-02-03  | 返却済
+  1 |       1 | 山田次郎   | 2024-02-01  | 返却済
+(2 行)
