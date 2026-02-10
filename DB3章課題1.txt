@@ -20,4 +20,4 @@ CREATE TABLE
 ----------+---------+----------+----------
  public   | books   | テーブル | postgres
  public   | rentals | テーブル | postgres
-(2 行)
+(2 行)author
