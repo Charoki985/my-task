@@ -1,0 +1,8 @@
+postgres=# SELECT title, author, price
+postgres-# FROM books
+postgres-# WHERE price < 3000;
+       title        |  author  | price
+--------------------+----------+-------
+ プログラミング入門 | 佐藤太郎 |  2800
+ Web開発の基礎      | 田中一郎 |  2500
+(2 行)
