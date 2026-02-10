@@ -1,0 +1,29 @@
+postgres=# INSERT INTO books (title, author, price)
+postgres-# VALUES ('プログラミング入門', '佐藤太郎', 2800);
+INSERT 0 1
+postgres=# INSERT INTO books (title, author, price)
+postgres-# VALUES ('データベース設計', '鈴木花子', 3200);
+INSERT 0 1
+postgres=# INSERT INTO books (title, author, price)
+postgres-# VALUES ('Web開発の基礎', '田中一郎', 2500);
+INSERT 0 1
+postgres=# SELECT * FROM books;
+ id |       title        |  author  | price
+----+--------------------+----------+-------
+  1 | プログラミング入門 | 佐藤太郎 |  2800
+  2 | データベース設計   | 鈴木花子 |  3200
+  3 | Web開発の基礎      | 田中一郎 |  2500
+(3 行)
+
+postgres=# INSERT INTO rentals (book_id, borrower, rental_date, returned)
+postgres-# VALUES (1, '山田次郎', '2024-02-01', '未返却');
+INSERT 0 1
+postgres=# INSERT INTO rentals (book_id, borrower, rental_date, returned)
+postgres-# VALUES (2, '佐々木三郎', '2024-02-03', '返却済');
+INSERT 0 1
+postgres=#  SELECT * FROM rentals;
+ id | book_id |  borrower  | rental_date | returned
+----+---------+------------+-------------+----------
+  1 |       1 | 山田次郎   | 2024-02-01  | 未返却
+  2 |       2 | 佐々木三郎 | 2024-02-03  | 返却済
+(2 行)
